@@ -63,3 +63,39 @@ $(document).ready(function () {
         $("#overlay4").hide();
     });
 });
+$(document).ready(function () {
+    $("#work5").mouseover(function () {
+        $("#overlay5").show();
+    }).mouseout(function () {
+        $("#overlay5").hide();
+    });
+});
+$(document).ready(function () {
+    $("#work6").mouseover(function () {
+        $("#overlay6").show();
+    }).mouseout(function () {
+        $("#overlay6").hide();
+    });
+});
+$(document).ready(function () {
+    $("#work7").mouseover(function () {
+        $("#overlay7").show();
+    }).mouseout(function () {
+        $("#overlay7").hide();
+    });
+});
+$(document).ready(function () {
+    $("form#form").submit(function (event) {
+        event.preventDefault()
+    });
+    $("#sub").click(function () {
+        var name = $("input#name").val()
+        var email = $("input#email").val()
+        var message = $("textarea#comment").val()
+        if ($("input#name").val() && $("input#email").val()) {
+            alert("Please enter a valid email.")
+        } else {
+            alert("Thank you for your feedback, our personnel will reach out to you.")
+        }
+    });
+});
